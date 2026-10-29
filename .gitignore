@@ -1,0 +1,18 @@
+# 1. Ignore everything by default
+*
+
+# 2. But do NOT ignore directories, otherwise Git won't look inside them for files
+!*/
+
+# 3. Explicitly allow your Python scripts
+!*.py
+
+# 4. Explicitly allow the .gitignore file itself so your team stays synced
+!.gitignore
+
+# Keep the manual Jetson GPU validation runner.
+!/scripts/test_ropeinspection_gpu.sh
+!/scripts/test_ropeinspection_40.sh
+
+# Ignore selected directories and files
+/runtime_test_output
